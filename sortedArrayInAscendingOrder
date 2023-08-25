@@ -22,6 +22,6 @@ class T1 {
     public static void main(String[] args) {
         int arr[] = { 45, 54, 5, 25, 68, 3, 2, 4, 5, 0 };
 
-        sortedArray(arr);
+        sortedArrayInAscendingOrder(arr);
     }
 }
