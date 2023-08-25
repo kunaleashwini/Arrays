@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class T1 {
+
+    public static void sortedArray(int arr[], int sum) {
+        for (int i = 0; i < arr.length; i++) {
+            int currSum = arr[i];
+
+            if (currSum == sum) {
+                System.out.println("Sum found at index " + i);
+                return;
+            } else {
+                for (int j = i + 1; j < arr.length; j++) {
+                    currSum += arr[j];
+
+                    if (currSum == sum) {
+                        System.out.println("Sum found from index " + i + " to " + j);
+                        return;
+                    }
+                }
+
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int arr[] = { 45, 54, 25, 68, 3, 2, 4, 5, 0 };
+
+        sortedArray(arr, 147);
+    }
+}
